@@ -1,18 +1,14 @@
-<?php
+<?php 
 
 class Index extends Controller {
-
-	function __construct() {
+	public function __construct() {
 		parent::__construct();
 	}
-	
-	function index() {
-		//echo Hash::create('sha256', 'jonathan', HASH_PASSWORD_KEY);
-		$this->view->render('index/index');
+
+	public function index() {
+		$this->view->title = 'Trang chủ';
+		$this->view->products = $this->model->product();
+		$this->view->render('frontEnd/index/index');
 	}
-	
-	function details() {
-		$this->view->render('index/index');
-	}
-	
+
 }

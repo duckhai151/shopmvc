@@ -1,13 +1,15 @@
 <?php 
-
 class Index extends Controller {
-	public function __construct() {
+	function __construct() {
 		parent::__construct();
 	}
 
-	public function index() {
+	function index() {
 		$this->view->title = 'Trang chủ';
-		$this->view->products = $this->model->product();
+		$this->loadModel('category', true);
+		$this->view->categories = $this->category_model->category();
+		$this->loadModel('index', true);
+		$this->view->products = $this->index_model->product();
 		$this->view->render('frontEnd/index/index');
 	}
 

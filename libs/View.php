@@ -18,4 +18,18 @@ class View {
 		}
 	}
 
+	public function renderAdmin($name, $noInclude = false)
+	{
+		if ($noInclude == true) {
+			require 'views/' . $name . '.php';	
+		}
+		else {
+			require 'views/backEnd/header.php';
+			require 'views/' . $name . '.php';
+			require 'views/backEnd/footer.php';	
+		}
+	}
+
+
+
 }

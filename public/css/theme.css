@@ -5,6 +5,9 @@ body {
   line-height: 1.6;
 }
 
+.modal-body{
+  padding: 100px 70px 
+}
 /* line 11, ../sass/theme.scss */
 #page {
   overflow: hidden;
@@ -547,7 +550,7 @@ body {
 /* line 465, ../sass/theme.scss */
 .search-wrapper {
   background: black;
-  color: white;
+  /* color: white; */
   padding-top: 10%;
 }
 /* line 469, ../sass/theme.scss */
@@ -559,7 +562,7 @@ body {
 /* line 474, ../sass/theme.scss */
 .search-wrapper .modal-content {
   background-color: transparent;
-  border: none;
+  /* border: none; */
   border-radius: 0;
   box-shadow: none;
 }

@@ -8,7 +8,9 @@
   line-height: 40px;
   margin: 0;
 }
-
+.price_{
+      text-decoration: line-through
+}
 /* Filter By Price */
 /* line 14, ../sass/theme-shop.scss */
 .filter-blk h4 {

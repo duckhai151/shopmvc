@@ -4,10 +4,12 @@
 <!-- Mirrored from pixelgeeklab.com/html/flatize/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Aug 2019 03:24:01 GMT -->
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="HTML5 Template" />
 	<meta name="description" content="Flatize - Shop HTML5 Responsive Template">
 	<meta name="author" content="pixelgeeklab.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title><?= isset($this->title) ? $this->title : 'Shop'; ?></title>
 
 	<!-- Google Fonts -->
@@ -36,7 +38,7 @@
 	<link href="<?php echo URL;?>public/css/theme-blog.css" rel="stylesheet">
 	<link href="<?php echo URL;?>public/css/theme-shop.css" rel="stylesheet">
 	<link href="<?php echo URL;?>public/css/theme.css" rel="stylesheet">
-	
+	<link rel="stylesheet" type="text/css" href="<?php echo URL?>public/css/main.css">
 	<!-- Style Switcher-->
 	<link rel="stylesheet" href="<?php echo URL;?>public/style-switcher/css/style-switcher.css">
 	<link href="<?php echo URL;?>public/css/colors/cyan/style.html" rel="stylesheet" id="layoutstyle">
@@ -64,6 +66,15 @@
 								<li><a href="#"><img src="<?php echo URL;?>public/images/flags/fa.gif" alt="FA"></a></li>
 								<li><a href="#"><img src="<?php echo URL;?>public/images/flags/fr.gif" alt="FR"></a></li>
 								<li><a href="#"><img src="<?php echo URL;?>public/images/flags/ja.gif" alt="JA"></a></li>
+							</ul>
+						</li>
+						<li class="dropdown my-account">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Currency <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">My Dashboard</a></li>
+								<li><a href="#">Account Information</a></li>
+								<li><a href="#">Address Book</a></li>
+								<li><a href="#">My Orders</a></li>
 							</ul>
 						</li>
 						<li class="dropdown my-account">
@@ -140,20 +151,13 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-						<a class="logo" href="<?php echo URL;?>index"><img src="<?php echo URL;?>public/images/logo.png" alt="Flatize"></a> </div>
-					<ul class="nav navbar-nav navbar-act pull-right">
-						<li class="login"><a href="javascript:void(0);"><i class="fa fa-user"></i></a></li>
-						<li class="search"><a href="javascript:void(0);" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-search"></i></a></li>
-					</ul>
+						<a class="logo" href="<?php echo URL;?>"><img src="<?php echo URL;?>public/images/logo.png" alt="Flatize"></a> </div>
+					
+
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav pull-right">
-							<li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-								<ul class="dropdown-menu">
-									<li><a href="index-2.html">Home Version 2</a></li>
-									<li><a href="index-3.html">Home Version 3</a></li>
-									<li><a href="index-4.html">Home Version 4</a></li>
-								</ul>
-							</li>
+
+							<li class="dropdown"><a href="<?php echo URL;?>">Home</a>
 							
 							<li class="dropdown"><a href="<?php echo URL;?>category">Product</a>
 								<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown"></a> -->
@@ -182,19 +186,16 @@
 									<li><a href="page-404.html">404 Error Page</a></li>									
 								</ul>
 							</li>
-							<li><a href="shortcodes.html">Shortcodes</a></li>
-							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-								<ul class="dropdown-menu">
-									<li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-									<li><a href="blog-mini-sidebar.html">Blog Mini Sidebar</a></li>
-									<li><a href="blog-masonry.html">Blog Masonry</a></li>
-									<li><a href="blog-single.html">Blog Single</a></li>
-								</ul>
-							</li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
 								<ul class="dropdown-menu">
 									<li><a href="page-contact1.html">Contact Version 1</a></li>
 									<li><a href="page-contact2.html">Contact Version 2</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="page-contact1.html">Đăng kí</a></li>
+									<li><a href="page-contact2.html">Đăng nhập</a></li>
 								</ul>
 							</li>
 						</ul>

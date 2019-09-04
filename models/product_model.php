@@ -13,14 +13,15 @@ class Product_Model extends Model {
 		    $string_en = $_POST['name_en'];
 		    $content_vi = $_POST['content_vi'];
 		    $content_en = $_POST['content_en'];
-		    $category_id = 1;
+		    
 		    $price = $_POST['price'];
 		    $sale_price = $_POST['sale_price'];
 		    $status = $_POST['status'];
 		    $image = '';
 		    //thêm thuộc tính cho sản phẩm
-		    // $size = $_POST['size'];
-		    // $color = $_POST['color'];
+		    $category_id = $_POST['category'];
+		    $size_id = $_POST['size'];
+		    $color_id = $_POST['color'];
 		    //upload ảnh chính
 		    if (!empty($_FILES['image']['name'])) {
 		    	$f = $_FILES['image'];
@@ -51,6 +52,30 @@ class Product_Model extends Model {
 				'language_id' => 2,
 				'string' => 'abc',
 			));
+			if(count($category_id) > 0) {
+				foreach($category_id as $category){
+				$this->db->insert('product_category', array(
+				'product_id' => $id,
+				'category_id' => $category
+				));
+			}
+			}
+			if(count($size_id) > 0) {
+				foreach($size_id as $size){
+					$this->db->insert('product_attribute', array(
+					'product_id' => $id,
+					'attribute_id' => $size
+					));
+				}
+			}
+			if(count($color_id) > 0) {
+				foreach($color_id as $color){
+					$this->db->insert('product_attribute', array(
+					'product_id' => $id,
+					'attribute_id' => $color
+					));
+				}
+			}
 		}	
 	}
 

@@ -29,14 +29,16 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach($this->products as $product) {?>
               <tr>
-                <th>ID</th>
-                <th>Tên danh mục</th>
-                <th>Ảnh</th>
-                <th>Trạng thái</th>
-                <th>Ngày tạo</th>
+                <th><?php echo $product['id'];?></th>
+                <th><?php echo $product['name'];?></th>
+                <th><img src="<?php echo URL . 'upload/images/' .$product['image'];?>" style="width: 50px"></th>
+                <th><?php echo $product['status'];?></th>
+                <th><?php echo $product['created'];?></th>
                 <th></th>
               </tr>
+              <?php }?>
             </tbody>
           </table>
         </div>

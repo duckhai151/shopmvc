@@ -4,12 +4,11 @@
 <!-- Mirrored from pixelgeeklab.com/html/flatize/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Aug 2019 03:24:01 GMT -->
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="HTML5 Template" />
 	<meta name="description" content="Flatize - Shop HTML5 Responsive Template">
 	<meta name="author" content="pixelgeeklab.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″/>
 	<title><?= isset($this->title) ? $this->title : 'Shop'; ?></title>
 
 	<!-- Google Fonts -->
@@ -159,7 +158,7 @@
 
 							<li class="dropdown"><a href="<?php echo URL;?>">Home</a>
 							
-							<li class="dropdown"><a href="<?php echo URL;?>category">Product</a>
+							<li class="dropdown"><a href="<?php echo URL;?>index/category">Product</a>
 								<!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown"></a> -->
 								<ul class="dropdown-menu">
 									<?php foreach($this->categories as $category){?>

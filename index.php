@@ -3,6 +3,8 @@
 require 'config.php';
 require 'util/Auth.php';
 
+header("Content-type: text/html; charset=utf-8");
+
 // Also spl_autoload_register (Take a look at it if you like)
 function __autoload($class) {
 	require LIBS . $class .".php";
@@ -23,3 +25,4 @@ require 'libs/Hash.php';
 
 $bootstrap = new Bootstrap();
 $bootstrap->init();
+

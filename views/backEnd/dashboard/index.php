@@ -5,7 +5,14 @@
       <h1>
        <div class="alert">
          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-         <strong>Xin chào bạn:<?php var_dump($_SESSION['ad']['name']); ?></strong>
+         <strong>Xin chào bạn:
+          <?php 
+          echo '<pre>';
+          print_r($_SESSION['ad']['permission']); 
+          echo '</pre>';
+          ?>
+            
+          </strong>
        </div>
       </h1>
       <!-- <ol class="breadcrumb">

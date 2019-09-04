@@ -7,7 +7,7 @@
 				<div class="product-thumb-info">
 					<div class="product-thumb-info-image">
 						<span class="product-thumb-info-act">
-							<a href="<?php echo URL;?>product/detail/<?php echo $product['id']; ?>">
+							<a href="<?php echo URL;?>index/detail/<?php echo $product['id']; ?>">
 								<span>
 									<i class="fa fa-external-link"></i>
 								</span>

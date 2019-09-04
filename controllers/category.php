@@ -1,21 +1,21 @@
 <?php
 
-class Category extends Controller {
+class Category extends AdminController {
 	public function __construct() {
 		parent::__construct();
 	}
 
-	public function index($id = false) {
-		$this->view->title = 'Sản phẩm';
-		if($id) {
-			$this->view->number = $id;
-			$this->view->products = $this->model->product($id);
-		} else {
-			$this->view->products = $this->model->product();
-		}
-		$this->view->categories = $this->model->category();
-		$this->view->render('frontEnd/category/index');
+	public function add() {
+		$this->view->title = 'Add Category';
+		$this->view->categories = $this->model->list();
+		$this->model->add();
+		$this->view->renderAdmin('backEnd/category/add');
 	}
 
+	public function list() {
+		$this->view->title = 'List Category';
+		$this->view->categories = $this->model->list();
+		$this->view->renderAdmin('backEnd/category/list');
+	}
 
 }

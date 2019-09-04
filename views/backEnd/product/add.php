@@ -60,7 +60,9 @@
               <!-- <select name="category_id" class="form-control" required="required"> -->
                 <div class="checkbox">
                   <label>
-                  
+                  <?php foreach($this->categories as $category){?>
+                    <input type="checkbox" name="category[]" value="<?php echo $category['id']?>"><?php echo $category['name']; ?><br />
+                  <?php }?>
                   </label>
                 </div>
             </div>
@@ -70,7 +72,9 @@
               <label for="">Kích thước</label>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" name="size[]" value="">
+                  <?php foreach($this->sizes as $size){?>
+                    <input type="checkbox" name="size[]" value="<?php echo $size['id']?>"><?php echo $size['name']; ?><br />
+                  <?php }?>
                   </label>
                 </div>
             </div>
@@ -81,7 +85,9 @@
              
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" name="color[]" value="">
+                    <?php foreach($this->colors as $color){?>
+                    <input type="checkbox" name="color[]" value="<?php echo $color['id']?>"><?php echo $color['name']; ?><br />
+                  <?php }?>
                   </label>
                 </div>
             </div>

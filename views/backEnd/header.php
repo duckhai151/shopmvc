@@ -36,7 +36,7 @@
     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
     <ul class="dropdown-menu">
       <li><a href="profile.php">Thông tin</a></li>
-      <li><a href="logout.php">Thoát tài khoản</a></li>
+      <li><a href="<?php echo URL;?>admin/logout">Thoát tài khoản</a></li>
     </ul>
   </li>
 </ul>
@@ -62,19 +62,19 @@
         </a>
         <ul class="treeview-menu">
           <li><a href="<?php echo URL;?>product/add"><i class="fa fa-circle-o"></i> Thêm mới</a></li>
-          <li><a href="<?php echo URL;?>product/index"><i class="fa fa-circle-o"></i> Danh sách</a></li>
+          <li><a href="<?php echo URL;?>product/list"><i class="fa fa-circle-o"></i> Danh sách</a></li>
         </ul>
       </li>
       <li class="treeview">
         <a href="#">
-          <i class="glyphicon glyphicon-tags"></i> <span> thuộc tính</span>
+          <i class="glyphicon glyphicon-tags"></i> <span> Thuộc tính</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="add_attribute.php"><i class="fa fa-circle-o"></i> Thêm mới</a></li>
-          <li><a href="DS_attribute.php"><i class="fa fa-circle-o"></i> Danh sách</a></li>
+          <li><a href="<?php echo URL; ?>attribute/add"><i class="fa fa-circle-o"></i> Thêm mới</a></li>
+          <li><a href="<?php echo URL; ?>attribute/list"><i class="fa fa-circle-o"></i> Danh sách</a></li>
         </ul>
       </li>
       <li class="treeview">
@@ -85,20 +85,20 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="them_category.php"><i class="fa fa-circle-o"></i>Thêm mới </a></li>
-          <li><a href="DS_category.php"><i class="fa fa-circle-o"></i> Danh mục </a></li>
+          <li><a href="<?php echo URL; ?>category/add"><i class="fa fa-circle-o"></i>Thêm mới </a></li>
+          <li><a href="<?php echo URL; ?>category/list"><i class="fa fa-circle-o"></i> Danh mục </a></li>
         </ul>
       </li>
       <li class="treeview">
         <a href="#">
-          <i class="glyphicon glyphicon-picture"></i> <span> banner</span>
+          <i class="glyphicon glyphicon-picture"></i> <span> Banner</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="them_banner.php"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
-          <li><a href="DS_Banner.php"><i class="fa fa-circle-o"></i>Danh sách</a></li>
+          <li><a href="<?php echo URL; ?>banner/add"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
+          <li><a href="<?php echo URL; ?>banner/list"><i class="fa fa-circle-o"></i>Danh sách</a></li>
         </ul>
       </li>
       <li class="">
@@ -127,8 +127,8 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="registration.php"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
-          <li><a href="DS_Account_admin.php"><i class="fa fa-circle-o"></i>Danh sách</a></li>
+          <li><a href="<?php echo URL ?>admin/add"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
+          <li><a href="<?php echo URL ?>admin/list"><i class="fa fa-circle-o"></i>Danh sách</a></li>
         </ul>
       </li>
       <li class="treeview">
@@ -139,8 +139,8 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="add_group.php"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
-          <li><a href="DS_Permissions.php"><i class="fa fa-circle-o"></i>Danh sách</a></li>
+          <li><a href="<?php echo URL?>groupadmin/add"><i class="fa fa-circle-o"></i>Thêm mới</a></li>
+          <li><a href="<?php echo URL?>groupadmin/list"><i class="fa fa-circle-o"></i>Danh sách</a></li>
         </ul>
       </li>
       <li class="treeview">

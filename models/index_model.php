@@ -9,4 +9,6 @@ class Index_Model extends Model {
 		return $this->db->selectAll('SELECT * FROM product JOIN product_description ON product.id = product_description.product_id AND product_description.language_id = 1');
 	}
 
+	
+
 }

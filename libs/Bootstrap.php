@@ -72,7 +72,7 @@ class Bootstrap {
     /**
      * Fetches the $_GET from 'url'
      */
-	private function _getUrl()
+	public function _getUrl()
 	{
 		$this->_url = isset($_GET['url']) ? $_GET['url'] : null;
 		$this->_url = str_replace('-', '', $this->_url);
